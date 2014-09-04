@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" 
+    android:id="@+id/rootrl">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topLayout"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <Button
+                android:id="@+id/toallBt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settingbt_selected"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:text="通用"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/separate_line" />
+
+            <Button
+                android:id="@+id/gprsBt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settingbt_selected"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:text="流量控制"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/separate_line" />
+
+            <Button
+                android:id="@+id/newmsgBt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settingbt_selected"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:text="新消息提醒"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/separate_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settingbt_selected"
+                android:gravity="center_vertical" >
+
+                <Button
+                    android:id="@+id/aboutBt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/settingbt_selected"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:padding="15dp"
+                    android:text="版本"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/renhe_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/versionname"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/separate_line" />
+
+            <Button
+                android:id="@+id/updateBt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settingbt_selected"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:text="检查更新"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/separate_line" />
+
+            <Button
+                android:id="@+id/attentionBt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settingbt_selected"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:text="关注人和网"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/separate_line"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/feedbackBt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settingbt_selected"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:text="意见反馈"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/separate_line" />
+
+            <Button
+                android:id="@+id/exitBt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settingbt_selected"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:text="退出"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/separate_line" />
+        </LinearLayout>
+    </ScrollView>
+
+  <!--   <include
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/renhe_title_height"
+        android:layout_alignParentTop="true"
+        layout="@layout/more_top" /> -->
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="versionname">1.5.0</string>
+    <string name="versionnameshow">人和网Android 1.5.0版</string>
+    <string name="renhe_copyright">Copyright © 2004-2014 renhe.cn</string>
+    <string name="renhe_copyright_line2">All rights reserved.</string>
+    
+    <string name="app_name">\u4eba\u548c\u7f51</string>
+    <string name="passwordnotnull">密码不能为空</string>
+    <string name="passwordrule">密码为6-16位字母和数字组合</string>
+    <string name="passwordrule_count">密码为6-16位字母和数字组合</string>
+    <string name="repasswordrule">确认密码必须与密码相同</string>
+    <string name="mailnotnull">邮箱不能为空</string>
+    <string name="mailrule">请输入正确的邮箱地址或手机号码</string>
+    <string name="namenotnull">姓名不能为空</string>
+    <string name="comPanynotnull">公司不能为空</string>
+    <string name="jobnotnull">职务不能为空</string>
+    <string name="phonenotnull">号码不能为空</string>
+    <string name="phonerule">您输入的是无效的电话号码</string>
+
+    <!-- 登录页面 -->
+    <string name="logintopStr">人和网Logo</string>
+    <string name="loginMailTitle">电子邮箱/手机号</string>
+    <string name="loginPassTitle">密码</string>
+    <string name="loginBtnStr">登录</string>
+    <string name="hasNoAccount">还没有账号?</string>
+    <string name="gotoRegister">马上注册</string>
+    <string name="ptr_pull_to_refresh">下拉刷新...</string>
+    <string name="ptr_release_to_refresh">松开刷新..</string>
+    <string name="ptr_refreshing">加载中...</string>
+    <string name="ptr_last_updated">Updated: %1$s</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+    <string name="clause"><h3>人和网(Renhe.cn)依据以下条件和条款提供您所享有的服务：</h3><br />人和网(Renhe.cn)致力于打造专业人士的人际关系网。通过这个平台，专业人士可以建立、拓展和管理自己的人际网络，并在此交流专业知识、业界资讯，探讨合作机会。   1. 接受条款：  通过首页进入人和网(Renhe.cn)网站即表示您已经同意自己与人和网(Renhe.cn)订立本协议，且受本协议条款和条件 (“条款”) 的约束。人和网(Renhe.cn)可随时自行全权决定更改“条款”。如“条款”有任何变更，人和网(Renhe.cn)将在网站上刊载公告，通知予您。如您不同意相关变更，必须停止使用“服务”。经修订的“条款”一经在人和网(Renhe.cn)网站公布后，立即自动生效。您登录或继续使用“服务”将表示您接受经修订的“条款”。除另行明确声明外，任何使“服务”范围扩大或功能增强的新内容均受本协议约束。  2. 谁可使用人和网(Renhe.cn)？  “服务”仅供能够根据相关法律订立具有法律约束力的合约的个人或公司使用。因此，您的年龄必须在十八周岁以上，才可使用本网站的服务。如不符合本项条件，请勿使用“服务” 。人和网(Renhe.cn)可随时自行全权决定拒绝向任何人士提供“服务”。“服务”不会提供给被暂时或永久终止资格的人和网(Renhe.cn)会员。  3. 隐私权条款：  人和网(Renhe.cn)强调保护所有会员的隐私权，我们将为每个会员提供最安全，最可靠的服务。您可以通过人和网(Renhe.cn)完全控制自己的个人信息。以下是我们的承诺：  [会员个人信息]  当您到我们网站上注册并填写经历的时候，您会被要求提供一系列个人基本信息，如您的电子邮件以及联系方式等等。会员个人信息（不包括您的姓名、公司名称和职位）只会被您允许的其他会员朋友看到。因此请避免将此部分信息填入到会员公开资料上，否则网站无法保障这部分信息的隐私权。我们不会向第三方公开上述信息，除非我们认为出于法律的需要。但这些资料将会被我们统计、汇总，为我们的广告商提供依据。  [信息的修改和删除]  您可以在人和网(Renhe.cn)上修改您的个人信息和经历。除了信息的发布者外，任何人无权修改或删除他人发布的信息。人和网(Renhe.cn)有根据其判断保留修改或删除任何不适信息的权利。  [隐私权条款的变更]  如果我们决定改变人和网(Renhe.cn)的隐私权条款，我们会及时公布，以便您能及时了解到我们在收集什么资料，如何使用这些资料，以及是否向别人公开这些资料，如果您有任何关于我们隐私权条款的问题，欢迎您随时发电子邮件联系我们。  4. 版权：  A 此网址的所有内容和图表受《中华人民共和国著作权法》及相关法律法规和中国加入的所有知识产权方面的国际条约的保护。人和网(Renhe.cn)对网站内容享有完整的著作权，未经其允许，不得以任何形式复制和采用。在内容和图表不作任何修改、保留性内容未做修改以及得到人和网(Renhe.cn)的许可的情况下，人和网(Renhe.cn)的网上材料可作为网外信息方面其他非商业性的用途。   B 申请使用人和网(Renhe.cn)内容的许可按特别批准原则进行；人和网(Renhe.cn)欢迎各方的申请；请把请求直接提交给我们。   C 请勿擅自复制或采用人和网(Renhe.cn)所创造的用以制成网页的HTML。人和网(Renhe.cn)对其HTML享有著作权。同时人和网(Renhe.cn)对其网址上的所有图标、图饰、图表、色彩、文字表述及其组合、版面设计、数据库均享有完全的著作权，对发布的信息均享有专有的发布和使用权，未经人和网(Renhe.cn)同意，不得擅自复制、使用或转载。   5. 责任承担：  人和网(Renhe.cn)并无随时监视此网址，但保留对其实施实时监视的权利。对于他方输入但不是人和网(Renhe.cn)发布的材料，人和网(Renhe.cn)概不负任何法律责任。应聘信息发布方必须对其存入简历中心的个人简历及材料的格式、内容的准确性和合法性独立承担一切法律责任。招聘信息的发布方对其在职位数据库公布的材料独立承担一切法律责任。  人和网(Renhe.cn)不保证对某一种职位描述会有一定数目的使用者来浏览，也不保证会有一位特定的使用者来浏览。对于在本网站上的其他网站网址链接内容，人和网(Renhe.cn)概不负法律责任。  对于申请注册人和网的会员，人和网并无义务查实该会员资料是否真实。如有机构提供相关资料（包括但不限于营业执照等），证明某会员并非该机构的工作人员，人和网有权不通知该会员，直接删除此账号。  6. 网站使用：  A 明确禁止条款： 人和网(Renhe.cn)只能用于合法目的，即交流专业知识，交流业界资讯，交流人脉关系，交流商业机会等。人和网(Renhe.cn)明确禁止任何其他用途，所有使用者必须保证不用于下列任何一种用途： (1) 在用户经历中公布虚假的、不完整的或不准确的资料，公布不是经历的资料，如意见、通知、商业广告或其他内容。  (2) 本公司的竞争同行用此方法寻求与雇主的业务联络。  (3) 擅自删除或修改任何其他个人或公司公布的资料。  (4) 擅自打印、复制或使用有关雇员的任何个人资料或有关雇主的商业信息。未经同意，给公布信息 的个人或公司发电子邮件、打电话、寄信或进行其他任何形式的接触。   B 网址安全规则： 禁止使用者破坏或企图破坏人和网(Renhe.cn)的安全规则，其中包括但不限于：  (1) 接触未经许可的数据或进入未经许可的服务器或账户；  (2) 没有得到许可，企图探查，扫描或测试系统或网络的弱点，或者破坏安全措施；  (3) 企图干涉对用户及网络的服务，包括，并不限于，通过超载， "邮件炸弹"或"摧毁"等手段；  (4) 发送促销，产品广告及服务的Email；   C 总则： 严禁出现下列三种情况：  (1) 违反任何现行法律法规；  (2) 侵犯他人的著作权及其他知识产权，侵害他人的商业机密或侵犯他人的隐私权等其他个人权利；  (3) 利用本网址传送、分发、储存属于诽谤、淫秽、威胁、辱骂性的材料，毁损他人材料。   7. 暂停与终止使用：  任何经人和网(Renhe.cn)查实违反了网站使用规则的用户，如果人和网(Renhe.cn)认为确有必要，可以不提出警告而马上暂停或终止对该用户的服务；而对屡犯者将立即终止其人和网账号的使用权。具体规则如下：  不允许：  违反互联网相关政策法规(http://www.cnnic.net.cn/html/Dir/2000/09/25/0652.htm)的行为与内容； 威胁他人，互相攻击； 泄露他人隐私； 个人资料中包含虚假信息，欺诈； 肆意发布广告，发布包含联系方式的内容。 对网站运营安全有潜在威胁的行为与内容。   不欢迎：  针对种族、国家、民族、宗教、性别、年龄、地缘、性取向、生理特征的歧视和仇恨言论； 无意义，与讨论主题不符的内容； 色情，暴力，传销，群发信息，网赚等可能令人不适的推广内容。   8. 除外：  除了本网址在信息保密中提出的条款外，使用者理解并同意，人和网(Renhe.cn)在不公开姓名的情况下，可以为用户向第三方提供综合性的资料。除非司法行政等公务需要，在未经本人同意的情况下，人和网(Renhe.cn)将不向任何第三方公开用户相关资料。  9. 风险分担：  用户使用本网址将承担一定风险：本网址的材料按“正如……的情况”提供，人和网(Renhe.cn)对材料不作任何明示的或暗示的保证。Renhe.cn(人和网)不能保证材料的特殊目的不受阻挠或不出错误、不能保证错误一定能得到纠正，也不能保证本网址或制成本网址的材料不会含有病毒或其他有害成分。在涉及有关材料的使用或使用结果方面，人和网(Renhe.cn)对材料的正确性、准确性、可靠性及其他同时不作出任何保证或说明。用户(而不是人和网(Renhe.cn))将承担因此而造成的一切必要的服务、修补和改正费用，除非现行的法律法规另有明文规定。</string>
+    <string name="more_setting">设置</string>
+
+    <!-- 客厅 -->
+    <string name="myroom">我的客厅</string>
+    <string name="friend">朋友</string>
+    <string name="colleague">同行</string>
+    <string name="city">同城</string>
+    <string name="follow">最受关注</string>
+    
+    <string name="room_forward">转发</string>
+    <string name="room_reply">回复</string>
+    <string name="room_good">赞</string>
+    <string name="room_share">分享</string>
+    <string name="readable_date_common">yyyy-MM-dd HH:mm</string>
+    <string name="readable_date_ymd">yyyy年M月d日</string>
+    <string name="readable_date_ym">yyyy-MM</string>
+    <string name="readable_date_md">M月d日</string>
+    <string name="readable_date_md_hm">M月d日  HH:mm</string>
+    <string name="readable_date_yesterday">昨天</string>
+    <string name="readable_date_before_yesterday">前天</string>
+    <string name="readable_date_days">{0}天前</string>
+    <string name="readable_date_hours">{0}小时前</string>
+    <string name="readable_date_minutes">{0}分钟前</string>
+    <string name="readable_date_justnow">刚刚</string>
+    <string name="readable_date_today">今天</string>
+    <string name="readable_date_week">本周</string>
+    <string name="readable_date_month">本月</string>
+    <string name="readable_date_more">更早</string>
+
+    <!-- 联系人高级搜索 -->
+    <string name="advance_keyword_hint">关键词</string>
+    <string name="advance_job_hint">职位</string>
+    <string name="advance_company_hint">公司</string>
+    <string name="advance_area_hint">地区</string>
+    <string name="advance_industry_hint">行业</string>
+    <string name="NETWORK_TIMEOUT">网络不给力，点击重新加载</string>
+    <string name="NETWORK_ERROR">网络不可用</string>
+    <string name="SERVER_ERROR">网络不可用</string>
+    <string name="CALL_ERROR">网络地址不可达</string>
+    <!-- 退出应用对话框 -->
+	<string name="closeRH">退出人和网</string>
+	<string name="closeRH_sub">你将不会收到新的人和网信息</string>
+	<string name="closeLoginRH">退出登录</string>
+	<string name="closeLoginRH_sub">注销或切换至其他账户登录</string>
+	
+	<string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开更新</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    
+    <!-- 新注册界面 -->
+    <string name="new_register_area">国家和地区</string>
+    <string name="new_register_tel">请输入手机号码</string>
+    <string name="new_register_dialog_title">确认手机号码</string>
+    <string name="new_register_dialog_content">我们将发送验证码短信到这个号码：</string>
+    <string name="new_register_dialog_button_sure">确定</string>
+    <string name="new_register_dialog_button_cancle">取消</string>
+    <string name="warn">该手机号码以前注册过，输入验证码后，人和网密码为您刚才设置的密码</string>
+    <!-- 验证码 -->
+    <string name="auth_desc1">我们已发送</string>
+    <string name="auth_desc2">验证码</string>
+    <string name="auth_desc3">到你的手机</string>
+    <string name="auth_dialog_sure">重新开始</string>
+    <string name="auth_dialog_cancle">等待</string>
+    <string name="auth_click_back">验证码短信可能略有延迟，确定取消并重新开始？</string>
+    <string name="auth_code_notreceive">收不到验证码？</string>
+    <string name="auth_code_receive_one_more_time">重新获取验证码</string>
+    <!-- 绑定手机 -->
+    <string name="bind_nobind">你还没有绑定手机</string>
+    <string name="bind_bind">你已绑定手机号码</string>
+    <string name="bind_desc">绑定手机号码可以帮助您找到更多的好友,并且之后您可以使用该手机号登录人和网客户端</string>
+    
+    <!-- 消息提醒 -->
+    <string name="no_unread_msg">没有未读消息~</string>
+    <string name="no_net_connected">网络未连接~</string>
+    <string name="no_reply">还没有人回复~</string>
+    
+    <!-- 城市选择 -->
+    <string name="is_locating">正在定位您所在城市...</string>
+    <string name="fail_locating">定位失败，请点击重试</string>
+    
+    
+    
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_search">搜索</string>
+    <string name="action_plus">功能</string>
+    <string name="action_album">我的相册</string>
+    <string name="action_collection">我的收藏</string>
+    <string name="action_card">我的银行卡</string>
+    <string name="action_settings">设置</string>
+    <string name="action_feed">意见反馈</string>
+    <string name="plus_group_chat">发起群聊</string>
+    <string name="plus_add_friend">添加朋友</string>
+    <string name="plus_video_chat">视频聊天</string>
+    <string name="plus_scan">扫一扫</string>
+    <string name="plus_take_photo">拍照分享</string>
+    
+    
+    
+</resources>

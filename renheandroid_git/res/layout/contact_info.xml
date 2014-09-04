@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/settingbt_selected"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/edit_archieve_sub_item_bacg" >
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:paddingLeft="15dp"
+            android:textColor="@color/color777"
+            android:textSize="@dimen/archieve_job_size" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/valueTv"
+                style="@style/titleTextSizeWithSmallBlack"
+                android:textColor="@color/lightblackColor"
+                android:textColorLink="@color/room_at_color"
+                android:textSize="@dimen/archieve_job_size"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/bindPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/unbind_phone_small"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="3dp"
+                android:textColor="@color/color777"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/contact_seperate"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/separate_line" />
+
+</LinearLayout>

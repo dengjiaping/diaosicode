@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topLayout"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/titleTextSizeWithOutColor"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="收件人："
+                android:textColor="@color/color999"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/nameTv"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/separate_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/titleTextSizeWithOutColor"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="主题："
+                android:textColor="@color/color999"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/titleEt"
+                style="@style/titleTextSizeWithFillBlack"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint=""
+                android:paddingRight="15dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/separate_line" />
+
+        <EditText
+            android:id="@+id/contentEt"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint=""
+            android:lineSpacingMultiplier="1.3"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp"
+            android:text=""
+            android:textSize="17sp" />
+    </LinearLayout>
+
+   <!--  <include
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/renhe_title_height"
+        android:layout_alignParentTop="true"
+        layout="@layout/send_top" /> -->
+
+</RelativeLayout>

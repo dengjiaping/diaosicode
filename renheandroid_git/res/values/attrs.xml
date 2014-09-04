@@ -1,0 +1,14 @@
+<resources>
+
+    <declare-styleable name="RoundCornerImageView">
+        <attr name="radiusX" format="dimension" />
+        <attr name="radiusY" format="dimension" />
+        <attr name="radiusXY" format="dimension" />
+        <attr name="isRound" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RatioImageView">
+        <attr name="aspectRatio" format="float" />
+        <attr name="adjustWidth" format="boolean" />
+    </declare-styleable>
+
+</resources>

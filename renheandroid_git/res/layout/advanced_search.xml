@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/search_bacg"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <ScrollView
+        android:id="@+id/editscrview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/editRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/editLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.itcalf.renhe.view.ClearableEditText
+                    android:id="@+id/advance_keywork_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/search_edit_shape"
+                    android:hint="@string/advance_keyword_hint"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="@dimen/advanced_search_textsize" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/belowkeword_sepera"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/editLl"
+                android:background="@color/separate_line" />
+
+            <LinearLayout
+                android:id="@+id/advance_main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/belowkeword_sepera"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <RelativeLayout
+                    android:id="@+id/advance_area_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/area_all_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="@string/advance_area_hint"
+                        android:textColor="@color/blog_item_nickname_text"
+                        android:textSize="@dimen/advanced_search_textsize" />
+
+                    <ImageView
+                        android:id="@+id/area_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/search_flag" />
+
+                    <TextView
+                        android:id="@+id/advance_area_rl_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/area_iv"
+                        android:text="全部城市"
+                        android:textColor="@color/search_selected_textcolor"
+                        android:textSize="@dimen/advanced_search_textsize" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/separate_line" />
+
+                <RelativeLayout
+                    android:id="@+id/advance_industry_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/advance_industry_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="@string/advance_industry_hint"
+                        android:textColor="@color/blog_item_nickname_text"
+                        android:textSize="@dimen/advanced_search_textsize" />
+
+                    <ImageView
+                        android:id="@+id/industry_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/search_flag" />
+
+                    <TextView
+                        android:id="@+id/advance_industry_rl_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/industry_iv"
+                        android:text="全部行业"
+                        android:textColor="@color/search_selected_textcolor"
+                        android:textSize="@dimen/advanced_search_textsize" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/separate_line" />
+
+                <EditText
+                    android:id="@+id/advance_company_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/advance_company_hint"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:textColor="@color/blog_item_nickname_text"
+                    android:textSize="@dimen/advanced_search_textsize" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/separate_line" />
+
+                <EditText
+                    android:id="@+id/advance_job_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/advance_job_hint"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:textColor="@color/blog_item_nickname_text"
+                    android:textSize="@dimen/advanced_search_textsize" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/aboveok_sepera"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/advance_main_layout"
+                android:background="@color/separate_line" />
+
+            <Button
+                android:id="@+id/advance_ok_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/advance_main_layout"
+                android:layout_alignRight="@+id/advance_main_layout"
+                android:layout_below="@+id/aboveok_sepera"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/login_bt_selected"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="搜     索"
+                android:textColor="@color/white"
+                android:textSize="@dimen/renhe_login_button_textsize" />
+
+            <RelativeLayout
+                android:id="@+id/historyRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/advance_ok_btn"
+                android:layout_marginTop="20dp" >
+
+                <RelativeLayout
+                    android:id="@+id/historyRl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/search_history_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/search_histroy_iv"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/search_history_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/search_history_iv"
+                        android:text="近期搜索记录"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/history_seperator"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/historyRl1"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/separate_line" />
+
+                <RelativeLayout
+                    android:id="@+id/histroyrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/history_seperator"
+                    android:background="@color/white" >
+
+                    <RelativeLayout
+                        android:id="@+id/histroyll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <com.itcalf.renhe.view.ListviewWithScroolview
+                            android:id="@+id/historylv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:cacheColorHint="#00000000"
+                            android:divider="@null"
+                            android:smoothScrollbar="true" >
+                        </com.itcalf.renhe.view.ListviewWithScroolview>
+
+                        <LinearLayout
+                            android:id="@+id/clearll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/historylv"
+                            android:background="@drawable/section_list_item_bacg"
+                            android:clickable="true"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp" >
+
+                            <TextView
+                                android:id="@+id/clearhistoryTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="清空历史搜索记录"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/nohistoryTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:text="无历史搜索记录"
+                        android:textColor="@color/separate_line"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/history_seperator2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/histroyrl"
+                    android:background="@color/separate_line" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

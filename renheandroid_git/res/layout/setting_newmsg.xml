@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <!-- 提醒设置 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/message_notify_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="接受新消息通知"
+                android:textColor="@color/blog_item_nickname_text"
+                android:textSize="@dimen/setting_item_textsize" />
+
+            <com.itcalf.renhe.view.SwitchButton
+                android:id="@+id/message_notify_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:checked="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/separate_line" />
+
+        <LinearLayout
+            android:id="@+id/notify_subitem_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 >
+
+                <TextView
+                    android:id="@+id/sound_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="声音"
+                    android:textColor="@color/blog_item_nickname_text"
+                    android:textSize="@dimen/setting_item_textsize" />
+
+                <TextView
+                    android:id="@+id/sound_tv_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sound_tv"
+                    android:textColor="@color/blog_item_nickname_text"
+                    android:textSize="@dimen/setting_item_sub_textsize"
+                    android:visibility="gone" />
+
+                <com.itcalf.renhe.view.SwitchButton
+                    android:id="@+id/sound_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/separate_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/warnshake_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="震动"
+                    android:textColor="@color/blog_item_nickname_text"
+                    android:textSize="@dimen/setting_item_textsize" />
+
+                <TextView
+                    android:id="@+id/warnshake_tv_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/warnshake_tv"
+                    android:textColor="@color/blog_item_nickname_text"
+                    android:textSize="@dimen/setting_item_sub_textsize"
+                    android:visibility="gone" />
+
+                <com.itcalf.renhe.view.SwitchButton
+                    android:id="@+id/warnshake_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/separate_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/led_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="LED"
+                    android:textColor="@color/blog_item_nickname_text"
+                    android:textSize="@dimen/setting_item_textsize" />
+
+                <TextView
+                    android:id="@+id/led_tv_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/led_tv"
+                    android:textColor="@color/blog_item_nickname_text"
+                    android:textSize="@dimen/setting_item_sub_textsize"
+                    android:visibility="gone" />
+
+                <com.itcalf.renhe.view.SwitchButton
+                    android:id="@+id/led_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--
+         <include
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/renhe_title_height"
+        android:layout_alignParentTop="true"
+        layout="@layout/more_top" />
+    -->
+
+</RelativeLayout>

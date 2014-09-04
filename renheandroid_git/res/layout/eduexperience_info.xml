@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp" 
+        android:paddingRight="15dp"
+        android:background="@drawable/edit_archieve_sub_item_bacg"
+        >
+
+        <TextView
+            android:id="@+id/schoolNameTv"
+            style="@style/titleTextSizeWithSmallBlack"
+            android:textSize="@dimen/archieve_job_size"
+            android:textColor="@color/lightblackColor" />
+
+        <TextView
+            android:id="@+id/studyFieldTv"
+            style="@style/titleTextSizeWithSmallBlack"
+            android:textSize="@dimen/archieve_job_size"
+            android:textColor="@color/lightblackColor"
+            android:layout_marginTop="@dimen/archievee_item_between_margin" />
+
+        <TextView
+            android:id="@+id/timeInfoTv"
+            style="@style/titleTextSizeWithSmallBlack"
+            android:textColor="@color/color777"
+            android:textSize="@dimen/archieve_job_size"
+            android:layout_marginTop="@dimen/archievee_item_between_margin" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/separate_line" />
+
+</LinearLayout>

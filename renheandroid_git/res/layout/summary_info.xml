@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/self_info_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/edit_archieve_sub_item_bacg"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+         >
+
+        <TextView
+            style="@style/titleTextSizeWithSmallBlack"
+            android:paddingTop="10dp"
+            android:text="个人简介"
+            android:textColor="@color/new_archieve_fourbt_textcolor"
+            android:textSize="@dimen/archieve_job_size" />
+
+        <TextView
+            android:id="@+id/professionalTv"
+            style="@style/titleTextSizeWithSmallBlack"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/archievee_item_between_margin"
+            android:textSize="@dimen/archieve_job_size"
+            android:textColor="@color/lightblackColor" />
+
+        <LinearLayout
+            android:id="@+id/addSelfInfoLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/archievee_item_between_margin"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/edit_archieve_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="添加"
+                android:textColor="@color/lightblackColor"
+                android:textSize="@dimen/archieve_job_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separate_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/separate_line" />
+
+    <LinearLayout
+        android:id="@+id/self_profession_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_archieve_sub_item_bacg"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            style="@style/titleTextSizeWithSmallBlack"
+            android:text="个人专长"
+            android:textColor="@color/new_archieve_fourbt_textcolor"
+            android:textSize="@dimen/archieve_job_size" />
+
+        <TextView
+            android:id="@+id/specialtiesTv"
+            style="@style/titleTextSizeWithSmallBlack"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/archievee_item_between_margin"
+            android:textSize="@dimen/archieve_job_size"
+            android:textColor="@color/lightblackColor" />
+         <LinearLayout
+            android:id="@+id/addProfessionInfoLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/archievee_item_between_margin"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/edit_archieve_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="添加"
+                android:textColor="@color/lightblackColor"
+                android:textSize="@dimen/archieve_job_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res/com.itcalf.renhe"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bacg"
+    android:orientation="vertical"
+     >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="40dp"
+        android:paddingTop="10dp" >
+
+        <com.itcalf.renhe.view.RoundCornerImageView
+            android:id="@+id/contactface_img"
+            android:layout_width="@dimen/renhe_room_image_wh"
+            android:layout_height="@dimen/renhe_room_image_wh"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/avatar"
+            attr:radiusXY="@dimen/list_item_round_image_radius" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/contactface_img"
+            android:layout_alignBottom="@id/contactface_img"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/contactface_img"
+            android:paddingLeft="10dp"
+            android:paddingRight="60dp" >
+
+            <TextView
+                android:id="@+id/username_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color000"
+                android:textSize="@dimen/room_format_username_textsize" />
+
+            <ImageView
+                android:id="@+id/vipImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/username_txt"
+                android:layout_marginBottom="@dimen/vip_margin"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/username_txt"
+                android:contentDescription="@string/app_name" />
+
+            <ImageView
+                android:id="@+id/realnameImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/username_txt"
+                android:layout_marginBottom="@dimen/realname_margin"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/vipImage"
+                android:contentDescription="@string/app_name" />
+
+             <ImageView
+                android:id="@+id/rightImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/username_txt"
+                android:layout_marginBottom="@dimen/vip_margin"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/realnameImage"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/job_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username_txt"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxWidth="120dp"
+                android:singleLine="true"
+                android:textColor="@color/color000"
+                android:textSize="@dimen/room_format_userjob_textsize" />
+
+            <TextView
+                android:id="@+id/company_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/job_txt"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/job_txt"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/color000"
+                android:textSize="@dimen/room_format_userjob_textsize" />
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/selected_ck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+             />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/separate_line" />
+
+</LinearLayout>

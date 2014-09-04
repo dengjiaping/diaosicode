@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itcalf.renhe"
+    android:versionCode="150"
+    android:versionName="@string/versionname" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".RenheApplication"
+        android:debuggable="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.RENHE.ActionBar" >
+
+        <!-- 登录/注册 -->
+        <activity
+            android:name=".context.MyPortal"
+            android:theme="@style/Theme.Sherlock.NoActionBar"
+            android:screenOrientation="portrait" 
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".context.portal.LoginActivity"
+            android:theme="@style/Theme.Sherlock.NoActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".context.portal.RegisterActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="adjustResize"
+            />
+        <activity
+            android:name=".context.portal.ClauseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".context.contacts.SearchContactsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".context.contacts.SelectContactsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 大厅 -->
+        <activity
+            android:name=".context.main.HallActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <!-- 客厅 -->
+        <activity
+            android:name=".context.room.RoomsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".context.room.MessageBoardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".context.room.AttMessageBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".context.room.AddReplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".context.room.AddMessageBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".context.room.ForwardMessageBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".context.room.ReplyListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".context.room.ShowMessageBoardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name="com.itcalf.renhe.imageUtil.StandardImageXML"
+            android:screenOrientation="portrait" />
+
+        <!-- 档案 -->
+        <activity
+            android:name=".context.archives.MyHomeArchivesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".context.archives.AttentionListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".context.archives.FriendArchivesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".context.archives.NotFriendArchivesActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 更多 -->
+        <activity
+            android:name=".context.more.SettingMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".context.more.AboutRenheActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SlideCloseActivityNeedStyle" />
+        <activity
+            android:name=".context.more.FeedBackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SlideCloseActivityNeedStyle" />
+
+        <!-- 站内信 -->
+        <activity
+            android:name=".context.innermsg.InnerMsgListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".context.innermsg.LookatMsgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SlideCloseActivityNeedStyle"
+            android:windowSoftInputMode="adjustPan"
+            android:uiOptions="splitActionBarWhenNarrow">
+        </activity>
+        <activity
+            android:name=".context.innermsg.InnerMsgReplyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SlideCloseActivityNeedStyle" />
+        <activity
+            android:name=".context.innermsg.SendInnerMsgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".context.innermsg.MsgTabActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 人脉 -->
+        <activity
+            android:name=".context.relationship.SearchRelationshipActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".context.archives.CropImage"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".context.settings.SettingsPreferences"
+            android:theme="@style/Default.NoTitleBar" />
+        <activity
+            android:name=".context.relationship.AdvancedSearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".context.relationship.WheelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AdvanceSearchDialogStyleBottom" >
+        </activity>
+        <activity
+            android:name=".context.relationship.SearchResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SlideCloseActivityNeedStyle" >
+        </activity>
+        <activity
+            android:name=".context.more.MySettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".context.more.SettingNewMsgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SlideCloseActivityNeedStyle" >
+        </activity>
+        <activity
+            android:name=".context.more.SettingAllActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SlideCloseActivityNeedStyle" >
+        </activity>
+        <activity
+            android:name=".context.more.SettingGPRSActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SlideCloseActivityNeedStyle" >
+        </activity>
+        <activity
+            android:name=".context.archives.DialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" >
+        </activity>
+        <activity
+            android:name=".context.room.NewMessageBoardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SlideCloseActivityNeedStyle" >
+        </activity>
+        <activity
+            android:name=".context.room.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyGuideStyle" >
+        </activity>
+
+        <!-- 新用户注册 -->
+        <activity
+            android:name="com.itcalf.renhe.context.register.NewRegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.register.AuthActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 老用户绑定手机号 -->
+        <activity
+            android:name="com.itcalf.renhe.context.register.BindPhoneActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.register.BindPhoneAuthActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.register.BindPhoneGuideActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.portal.OldRegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.relationship.AdvanceSearchSelectCityMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.relationship.AdvanceSearchSelectForeignCityMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.relationship.AdvanceSearchSelectIndustryMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.relationship.selectindustry.SelectIndustryExpandableListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.archives.EditMyHomeArchivesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.archives.edit.EditSelfInfo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.archives.edit.EditProvideGetInfo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.archives.edit.EditSummaryInfo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.archives.edit.EditWorkInfo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.archives.edit.EditEduInfo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.archives.edit.EditEduInfoSelectSchool"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.archives.edit.EditOtherInfo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.archives.edit.EditContactInfo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.archives.edit.SelectCityWithChinaAndForeignActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.archives.edit.SelectChinaCityMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.archives.edit.SelectForeignCityMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.room.TwitterShowMessageBoardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.room.ShareDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.room.WebViewActivityForReport"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.itcalf.renhe.context.portal.WebViewActivityForFindPwd"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        
+        <!-- 新slidemenu -->
+        <activity 
+            android:name="com.itcalf.renhe.context.fragmentMain.MainFragment"
+            android:theme="@style/StyledIndicators"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        
+        
+        
+        <!-- QQ分享 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent222222" />
+                <!-- 100380359 100381104 222222 -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 百度定位 -->
+
+        <service
+            android:name=".service.RenheService"
+            android:exported="false"
+            android:icon="@drawable/icon"
+            android:label="站内信服务" />
+        <service
+            android:name=".service.VersionService"
+            android:exported="false"
+            android:icon="@drawable/icon"
+            android:label="版本更新服务" />
+
+        <!-- 您从百度网站获取的APP KEY -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="999b20c8b8" /> <!-- abcd1234 -->
+
+
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+        <!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START -->
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START" />
+        <!-- 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔(取消下行注释)。取值为1-24的整数，默认为1 -->
+        <!-- <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="2" /> -->
+        <!-- 日志仅在wifi网络下发送，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false" />
+        <!-- 是否获取基站位置信息 ,默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_CELL_LOCATION"
+            android:value="true" />
+        <!-- 是否获取GPS位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_GPS_LOCATION"
+            android:value="true" />
+        <!-- 是否获取WIFI位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_WIFI_LOCATION"
+            android:value="true" />
+
+        <!-- jpush 所需 -->
+        <!-- Required -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" > <!-- since 1.3.5 -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- since 1.3.5 -->
+                <category android:name="com.itcalf.renhe" /> <!-- since 1.3.5 -->
+            </intent-filter> <!-- since 1.3.5 -->
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.itcalf.renhe" />
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- 自定义的广播接收器,处理服务器名片识别成功推送 -->
+        <receiver
+            android:name="com.itcalf.renhe.receiver.MyJPushReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+
+                <category android:name="com.itcalf.renhe" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required. For publish channel feature -->
+        <!-- JPUSH_CHANNEL 是为了方便开发者统计APK分发渠道。 -->
+        <!-- 例如: -->
+        <!-- 发到 Google Play 的APK可以设置为 google-play; -->
+        <!-- 发到其他市场的 APK 可以设置为 xxx-market。 -->
+        <!-- 目前这个渠道统计功能的报表还未开放。 -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="google-play" />
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="d67dc87831ad2fd462521dd9" />
+        <!-- 友盟统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5379634556240b825e0522bd" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="yingyonghui" />
+
+        <!-- 百度定位 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <!-- meta-data需要写在application中 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="GgmKwXIFq7lYzCxiNZMHCfpY" />
+    </application>
+
+    <uses-sdk
+        android:maxSdkVersion="19"
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.PERMISSION_NAME" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- Required -->
+    <permission
+        android:name="com.itcalf.renhe.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required -->
+    <uses-permission android:name="com.itcalf.renhe.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" /> <!-- since 1.6.0 -->
+
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+</manifest>

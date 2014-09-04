@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+   <!--  <include
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/renhe_title_height"
+        android:layout_alignParentTop="true"
+        layout="@layout/more_top1" /> -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/about_new" 
+        android:layout_below="@+id/topLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+    
+     
+
+    <TextView
+        android:id="@+id/copyrightText1"
+        style="@style/titleTextSizeWithBlack"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="@string/renhe_copyright_line2"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/copyrightText"
+        style="@style/titleTextSizeWithBlack"
+        android:layout_above="@+id/copyrightText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/renhe_copyright"
+        android:textSize="12sp" />
+
+   <TextView
+        android:id="@+id/versionText"
+        style="@style/titleTextSizeWithBlack"
+        android:layout_above="@+id/copyrightText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:text="shalnrng"
+        android:textSize="@dimen/about_renhe_textsize" />
+
+</RelativeLayout>

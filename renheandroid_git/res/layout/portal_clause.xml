@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+   <!-- <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/renhe_title_height"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:background="@drawable/top_bacg" >
+
+        <Button
+            android:id="@+id/backBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/renhe_register_bckbutton_marginleft"
+            android:background="@drawable/backbt_selected"
+            android:paddingLeft="@dimen/renhe_register_bckbutton_marginleft"
+            android:textColor="@color/white"
+            android:textSize="@dimen/renhe_register_bckbutton_textsize" />
+
+        <TextView
+            style="@style/titleTextSizeWithBlack"
+            android:text="人和网服务条款"
+            android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/renhe_title_textsize"/>
+    </RelativeLayout> -->
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topLayout"
+        android:layout_marginTop="5dp"
+        android:background="@color/white" >
+
+        <!--
+             <TextView android:id="@+id/infoTv" android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" android:textSize="22sp"/>
+        -->
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" />
+    </ScrollView>
+
+</RelativeLayout>

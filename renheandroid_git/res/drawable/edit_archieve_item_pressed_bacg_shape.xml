@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+     <stroke android:width="0.5dp" android:color="@color/search_edit_stroke_bcg"></stroke>
+	<gradient android:startColor="@color/hall_list_bacg" android:centerColor="@color/hall_list_bacg" android:endColor="@color/hall_list_bacg"></gradient>
+</shape>

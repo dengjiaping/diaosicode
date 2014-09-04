@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="titleTextSizeWithBlack">
+        <item name="android:textSize">28px</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="titleTextSizeWithFillBlack">
+        <item name="android:textSize">28px</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="titleTextSizeWithSmallBlack">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item> 
+    </style>
+
+    <style name="titleTextSizeWithOutColor">
+        <item name="android:textSize">28px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Theme.RENHE" parent="Theme.Sherlock">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+        <!--
+        <item name="android:progressBarStyle">@android:style/Widget.Holo.ProgressBar</item>
+        <item name="android:progressBarStyleHorizontal">@android:style/Widget.Holo.ProgressBar.Horizontal</item>
+        <item name="android:progressBarStyleSmall">@android:style/Widget.Holo.ProgressBar.Small</item>
+        <item name="android:progressBarStyleSmallTitle">@android:style/Widget.Holo.ProgressBar.Small.Title</item>
+        <item name="android:progressBarStyleLarge">@android:style/Widget.Holo.ProgressBar.Large</item>
+        <item name="android:buttonStyle">@android:style/Widget.Holo.Button</item>
+        -->
+        <!--
+             <item name="android:windowIsTranslucent">true</item> <item name="android:windowBackground">@drawable/translucent_background</item> 
+			<item name="android:colorForeground">#fff</item>
+        -->
+    </style>
+
+    <style name="Theme.RENHE.ActionBar" parent="Theme.Sherlock.Light.DarkActionBar">
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+    </style>
+
+    <style name="SlideCloseActivityNeedStyle" parent="Theme.RENHE.ActionBar">
+        <item name="android:windowIsTranslucent">true</item> <!-- //设置半透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="dialog_fullscreen">
+
+        <!--
+        <item name="android:windowFullscreen">true</item>
+		<item name="android:windowNoTitle">true</item>
+        -->
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">@drawable/top_bacg</item>
+    </style>
+
+    <style name="Default.NoTitleBar" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:textColorPrimaryInverse">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleSize">50sp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="MyGuideStyle" parent="android:Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AdvanceSearchDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@drawable/select_window_bg</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <!-- 设置里checkbox样式 -->
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:width">@dimen/exit_checkbox_dimen</item>
+    </style>
+    <!-- autoCompleteTextview -->
+    <style name="myAutoCompletestyle" parent="@android:style/Widget.AutoCompleteTextView">
+        <item name="android:popupBackground">@drawable/autocomplete_shape</item>
+        <item name="android:dropDownVerticalOffset">5dip</item>
+    </style>
+
+    <style name="TimePickedStyleBottom" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- //设置背景 -->
+        <item name="android:windowFrame">@null</item> <!-- //去掉边框 -->
+        <item name="android:backgroundDimEnabled">true</item> <!-- //设置是否背景模糊 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- //设置半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- //设置无标题 -->
+        <item name="android:windowFullscreen">false</item>
+        <!-- <item name="android:backgroundDimEnabled">false</item>activity不变暗 -->
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <!--
+    <style name="MyAlertDialogTheme" parent="Theme.RENHE">
+	    <item name="android:alertDialogStyle">@android:style/Theme.Holo.Light.Dialog</item>
+	</style>
+    -->
+
+    <style name="StyledIndicators" parent="Theme.Sherlock.Light.DarkActionBar">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+    </style>
+
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@drawable/selector_tabtext</item>
+    </style>
+
+    <style name="actionbarlogobcg">
+        <item name="android:background">@drawable/actionbar_logo_bacg_selector</item>
+    </style>
+
+</resources>

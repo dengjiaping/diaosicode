@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/hall_list_bacg" >
+
+    <com.itcalf.renhe.view.XListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+       android:background="@color/hall_list_bacg"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:smoothScrollbar="true" />
+
+
+</RelativeLayout>

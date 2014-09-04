@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/new_register_dialog_bcg" >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:text="@string/new_register_dialog_title"
+        android:textColor="@color/new_register_bt"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/seperate_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dialog_title"
+        android:background="@color/new_register_bt" />
+
+    <LinearLayout
+        android:id="@+id/content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seperate_line"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_register_dialog_content"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/seperate_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/content_ll"
+        android:background="@color/new_register_dialog_bt_seleparate" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seperate_line2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dialog_cancle_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/new_register_dialog_button_cancle"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:background="@drawable/new_register_dialog_bt_selected" 
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <View
+            android:id="@+id/seperate_line3"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/new_register_dialog_bt_seleparate" />
+
+        <Button
+            android:id="@+id/dialog_sure_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/new_register_dialog_button_sure"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:background="@drawable/new_register_dialog_bt_selected"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>

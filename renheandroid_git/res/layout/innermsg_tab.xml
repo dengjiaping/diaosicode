@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+ 		<LinearLayout
+           android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/main_bottom_shape"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+             >
+
+            <Button
+                android:id="@+id/inbox_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/inner_inbox_selector"
+                android:layout_gravity="left"
+                android:text="收件箱"
+                android:textColor="#60646f"
+                android:textSize="@dimen/room_tab_bottom_item_text_size" 
+                android:layout_weight="1"/>
+
+
+            <Button
+                android:id="@+id/sendbox_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/inner_sendbox_selector"
+                android:text="发件箱"
+                android:textColor="#60646f"
+                android:textSize="@dimen/room_tab_bottom_item_text_size" 
+                android:layout_weight="1"/>
+        </LinearLayout>
+      <!--   <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/main_bottom_shape"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <Button
+                android:id="@+id/inbox_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roomsbottombtn_selected"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/icon_inbox"
+                android:paddingTop="10dp"
+                android:text="收件箱"
+                android:textColor="@drawable/roomsbottomtxt_selected"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/sendbox_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/roomsbottombtn_selected"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/icon_send"
+                android:paddingTop="10dp"
+                android:text="发件箱"
+                android:textColor="@drawable/roomsbottomtxt_selected"
+                android:textSize="16sp" />
+        </RelativeLayout> -->
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</TabHost>

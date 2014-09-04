@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="700dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white" >
+
+            <!-- <include
+                android:id="@+id/topLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                layout="@layout/common_top" /> -->
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="115dp"
+                android:layout_below="@id/topLayout"
+                android:background="@drawable/archives_use_bg"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/avatarImage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/avatar" />
+
+                <TextView
+                    android:id="@+id/nameTv"
+                    style="@style/titleTextSizeWithBlack"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/avatarImage"
+                    android:text="程增鹏" />
+
+                <TextView
+                    android:id="@+id/jobTv"
+                    style="@style/titleTextSizeWithBlack"
+                    android:layout_below="@id/nameTv"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/avatarImage"
+                    android:text="Java开发"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/companyTv"
+                    style="@style/titleTextSizeWithBlack"
+                    android:layout_below="@id/nameTv"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/jobTv"
+                    android:text="人和网"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/addressTv"
+                    style="@style/titleTextSizeWithBlack"
+                    android:layout_below="@id/jobTv"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/avatarImage"
+                    android:text="杭州"
+                    android:textColor="@color/grayColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    style="@style/titleTextSizeWithBlack"
+                    android:layout_below="@id/companyTv"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/addressTv"
+                    android:text="互联网"
+                    android:textColor="@color/grayColor"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/editBt"
+                    style="@style/titleTextSizeWithBlack"
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button_selected"
+                    android:text="关注"
+                    android:textColor="@color/white" 
+                    android:paddingLeft="20dp"
+        			android:paddingRight="20dp"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/attentionBt"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_width="215dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/layout1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/archives_userbtn_selected"
+                android:drawableRight="@drawable/archives_right"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="15dp"
+                android:text="关注(300)"
+                android:textColor="@color/lightblackColor"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/roomBt"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_width="215dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/layout1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/attentionBt"
+                android:background="@drawable/archives_userbtn_selected"
+                android:drawableRight="@drawable/archives_right"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="15dp"
+                android:text="客厅"
+                android:textColor="@color/lightblackColor"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/vermicelliBt"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_width="215dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/attentionBt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/archives_userbtn_selected"
+                android:drawableRight="@drawable/archives_right"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="15dp"
+                android:text="粉丝(208)"
+                android:textColor="@color/lightblackColor"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/contactBt"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_width="215dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/attentionBt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/vermicelliBt"
+                android:background="@drawable/archives_userbtn_selected"
+                android:drawableRight="@drawable/archives_right"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="15dp"
+                android:text="联系人(928)"
+                android:textColor="@color/lightblackColor"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vermicelliBt"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/titleTextSizeWithBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="#888888"
+                    android:paddingLeft="15dp"
+                    android:text="联系信息"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/titleTextSizeWithBlack"
+                        android:paddingLeft="15dp"
+                        android:text="邮件：" />
+
+                    <TextView
+                        style="@style/titleTextSizeWithBlack"
+                        android:paddingLeft="10dp"
+                        android:text="chengzengpeng@hotmal.com"
+                        android:textColor="@color/grayColor" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/titleTextSizeWithBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="#888888"
+                    android:paddingLeft="15dp"
+                    android:text="概要信息"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp" >
+
+                    <TextView
+                        style="@style/titleTextSizeWithBlack"
+                        android:layout_marginBottom="10dp"
+                        android:text="个人简介" />
+
+                    <TextView
+                        style="@style/titleTextSizeWithBlack"
+                        android:layout_marginBottom="10dp"
+                        android:text="Codeing狂热爱好者"
+                        android:textColor="@color/grayColor" />
+
+                    <TextView
+                        style="@style/titleTextSizeWithBlack"
+                        android:layout_marginBottom="10dp"
+                        android:text="个人专长" />
+
+                    <TextView
+                        style="@style/titleTextSizeWithBlack"
+                        android:layout_marginBottom="10dp"
+                        android:text="OOP，OOD,J2EE开发，敏捷开发"
+                        android:textColor="@color/grayColor" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/titleTextSizeWithBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="#888888"
+                    android:paddingLeft="15dp"
+                    android:text="工作经历"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp" >
+
+                    <TextView
+                        style="@style/titleTextSizeWithBlack"
+                        android:layout_marginBottom="10dp"
+                        android:text="人和网" />
+
+                    <TextView
+                        style="@style/titleTextSizeWithBlack"
+                        android:layout_marginBottom="10dp"
+                        android:text="Java工程师" />
+
+                    <TextView
+                        style="@style/titleTextSizeWithBlack"
+                        android:layout_marginBottom="10dp"
+                        android:text="从2010年03月01到现在"
+                        android:textColor="@color/grayColor" />
+
+                    <TextView
+                        style="@style/titleTextSizeWithBlack"
+                        android:layout_marginBottom="10dp"
+                        android:text="人和网的维护和开发" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/titleTextSizeWithBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="#888888"
+                    android:paddingLeft="15dp"
+                    android:text="教育经历"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp" >
+
+                    <TextView
+                        style="@style/titleTextSizeWithBlack"
+                        android:text="淮海工学院" />
+
+                    <TextView
+                        style="@style/titleTextSizeWithBlack"
+                        android:text="学历：本科/专业：计算机科学与技术" />
+
+                    <TextView
+                        style="@style/titleTextSizeWithBlack"
+                        android:text="从2005年2月到2009年2月"
+                        android:textColor="@color/grayColor" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/titleTextSizeWithBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="#888888"
+                    android:paddingLeft="15dp"
+                    android:text="其他信息"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp" >
+
+                    <TextView
+                        style="@style/titleTextSizeWithBlack"
+                        android:layout_marginBottom="10dp"
+                        android:text="网站" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/titleTextSizeWithBlack"
+                            android:text="公司网站:"
+                            android:textColor="@color/grayColor" />
+
+                        <TextView
+                            style="@style/titleTextSizeWithBlack"
+                            android:text="www.renhe.cn"
+                            android:textColor="@color/hrefColor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/titleTextSizeWithBlack"
+                            android:text="网络档案:"
+                            android:textColor="@color/grayColor" />
+
+                        <TextView
+                            style="@style/titleTextSizeWithBlack"
+                            android:text="xixiforever.renhe.cn"
+                            android:textColor="@color/hrefColor" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/mailtoBt"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:background="@drawable/archives_bottom_1_selected"
+            android:scaleType="center"
+            android:src="@drawable/archives1" />
+
+        <ImageButton
+            android:id="@+id/lettertoBt"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:background="@drawable/archives_bottom_1_selected"
+            android:src="@drawable/archives2" />
+
+        <ImageButton
+            android:id="@+id/callBt"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:background="@drawable/archives_bottom_1_selected"
+            android:src="@drawable/archives3" />
+
+        <ImageButton
+            android:id="@+id/sharetoBt"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:background="@drawable/archives_bottom_1_selected"
+            android:src="@drawable/archives4" />
+    </LinearLayout>
+
+</RelativeLayout>

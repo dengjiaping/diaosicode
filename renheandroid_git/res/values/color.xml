@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="nocolor">#00000000</color>
+	<color name="black">#000000</color>
+	<color name="white">#FFFFFF</color>
+	<color name="gray2">#c0c0c0</color>
+	<color name="yellow">#FFCC00</color>
+	<color name="orange">#f87a27</color>
+	<color name="blue">#0f73ab</color>
+	<color name="gray">#e1e1e1</color>
+	<color name="lightGrey">#ffe0e0e0</color>
+	<color name="green">#218300</color>
+	<color name="pink">#ff6666</color>
+	<color name="red">#d90c09</color>
+	<color name="hall_item_bcg">#f8f8f8</color>
+	<color name="top_bacg_red">#dd563f</color>
+	<color name="bg">#eeeeee</color>
+	<color name="griditem">#333333</color>
+	<color name="splitline">#e3e3e3</color>
+	<color name="divider">#d5d5d5</color>
+	<color name="divider2">#d4d4d4</color>
+	<color name="divider3">#e1e1e1</color>
+	<color name="update">#f35111</color>
+	<color name="transparent_background">#40000000</color>
+	<color name="weibotabfont">#055ba4</color>
+	<color name="hrefColor">#5c5cff</color>
+	<color name="color999">#999</color>
+	<color name="color000">#000</color>
+	<color name="color333">#333</color>
+	<color name="color039">#039</color>
+	<color name="color777">#777</color>
+	<color name="colorCccccc">#cccccc</color>
+	<color name="colorF5f5f5">#f5f5f5</color>
+	<color name="colorE4e4e4">#e4e4e4</color>
+	<color name="grayColor">#ccc</color>
+	<color name="lightblackColor">#333333</color>
+	<color name="darkgrey_bg">#CACFD5</color>
+	<color name="bottom_item_text_color">#5c626c</color>
+	
+	<color name="separate_line">#D6D6D6</color>
+	<color name="achieve_selfinfo_bacg">#323232</color>
+	<color name="achieve_yinfo_bacg">#f5f5f5</color>
+	<color name="achieve_item_bacg">#e6e9eb</color>
+	
+	<color name="blog_item_nickname_text">#333333</color>
+    <color name="blog_item_time_text_old">#828282</color>
+    <color name="blog_item_time_text_new">#efb974</color>
+    <color name="blog_item_content_text">#5b5b5b</color>
+    <color name="blog_item_sub_content_text">#ff000000</color>
+    <color name="blog_item_from_text">#ff808080</color>
+    <color name="blog_item_redirect_text">#696969</color>
+    <color name="blog_item_content_light_text">#ff516c97</color>
+    <color name="blog_item_date_text">#828282</color>
+    <color name="blog_client_textcolor">#808080</color>
+    <color name="hall_list_bacg">#e6e6e6</color>
+    <color name="darktheme_card">#e5e5e5</color>
+    <color name="room_item_reply_good_bcg">#f8f8f8</color>
+    <color name="room_item_reply_good_bcg_p">#f0f0f0</color>
+    <color name="room_item_reply_list_item">#f6f6f6</color>
+    <color name="menu_bacg">#f2f2f2</color>
+    <color name="menu_pressed_bacg">#dfdedc</color>
+    <color name="menu_title_bacg">#e3e3e3</color>
+    <!-- 退出 -->
+    <color name="exitRH">#303537</color>
+    <color name="exitRH_p">#282A2B</color>
+    <color name="exitRH_item_sub">#6B6D6E</color>
+    <!-- 客厅@ -->
+    <color name="room_at_color">#02658f</color>
+    <color name="wm_bg">#00f8f8f8</color>
+    <color name="notice_list_name_color">#576B95</color>
+    <color name="notice_list_sourcecontent_color">#666666</color>
+    <color name="transparent">#00000000</color>   
+    
+    <color name="bottom_item_bcg_darkgray">#dd563f</color>
+    <color name="bottom_item_bcg_gray">#b9b8b9</color>
+    <color name="room_good_textcolor">#db563e</color>
+    
+    <!-- 新版个人档案 -->
+    <color name="new_archieve_bcg">#e6e6e6</color>
+    <color name="new_archieve_contact_bcg">#bababa</color>
+    <color name="new_archieve_fourbt_textcolor">#777</color>
+    
+    <!-- 新注册界面 -->
+    <color name="new_register_area">#4599d4</color>
+    <color name="new_register_tel">#7d7d7d</color>
+    <color name="new_register_bt">#289bbe</color>
+    <color name="new_register_p_bt">#1d6388</color>
+    <color name="new_register_clause">#4aa2e6</color>
+    <color name="new_register_dialog_title">#50abf2</color>
+    <color name="new_register_dialog_seleparate">#2bb7ec</color>
+    <color name="new_register_dialog_bcg">#303537</color>
+    <color name="new_register_dialog_bt_p">#131313</color>
+    <color name="new_register_dialog_bt_seleparate">#262a29</color>
+    
+    <!-- 验证码填写界面 -->
+    <color name="auth_retry_bt_bcg">#aed4e7</color>
+    <color name="auth_desc">#4dc9e3</color>
+    <color name="auth_retry_bt_pre">#9a9a9a</color>
+    <color name="auth_retry_bt_aft">#4e4e4e</color>
+    <color name="auth_retry_receivecode_bacg">#1a1b19</color>
+    
+    <!-- 登陆界面 -->
+    <color name="login_bt_bcg">#e49c9e</color>
+    <color name="login_bt_pre_p">#d53d40</color>
+    <color name="login_bt_after_p">#962729</color>
+    <color name="login_register_bt_bcg">#F1F1F1</color>
+    <color name="login_register_bt_stroke_bcg">#DBDBDB</color>
+    <color name="login_hint_textcolor">#dfdfde</color>
+    
+    <!-- 写站内信 -->
+    <color name="add_receiver_item_bacg">#BADDF1</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="transp_white">#00FFFFFF</color>
+    
+    <!-- 选择城市 -->
+    <color name="search_city_edit_bacg">#c9c9ce</color>
+    <color name="search_city_item_nomal_bacg">#f0ebea</color>
+    <color name="search_city_item_press_bacg">#e1e1e1</color>
+    <!-- 左侧菜单 -->
+    <color name="slidmenu_top_color">#2d2d2d</color>
+    
+    <color name="showmsg_agreebt_p">#2d91cd</color>
+    <color name="showmsg_agreebt">#f5f5f5</color>
+    
+    <color name="search_edit_bacg">#ececec</color>
+    <color name="search_edit_stroke_bcg">#828282</color>
+    <color name="search_selected_textcolor">#413636</color>
+    <color name="search_bacg">#ececec</color>
+    
+    <color name="archieve_edit_edu_removebutton_textcolor">#8c8c8c</color>
+    <color name="archieve_edit_edu_removebutton_bcgcolor">#e9e9ea</color>
+    <color name="archieve_edit_edu_removebutton_p_bcgcolor">#bebebe</color>
+    <color name="archieve_edit_edu_removebutton_stroke">#aeaeae</color>
+    <color name="room_item_forward_btn_textcolor">#b9b9b9</color>
+    <color name="room_item_good_btn_textcolor">#f08742</color>
+    
+    <color name="archive_border_color">#e1e1e1</color>
+    
+</resources>

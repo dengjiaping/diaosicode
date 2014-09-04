@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <!-- <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/renhe_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bacg"
+        android:gravity="center_vertical" >
+
+        
+        <LinearLayout
+            android:id="@+id/backBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_bar_back" />
+
+            <ImageView
+                android:id="@+id/menu_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_logo" />
+        </LinearLayout>
+       
+
+        <ImageView
+            android:id="@+id/backBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:src="@drawable/logo_selector" >
+        </ImageView>
+
+        <Button
+            android:id="@+id/unread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/backBt"
+            android:background="@drawable/unread_homepage"
+            android:textColor="@color/top_bacg_red"
+            android:textSize="@dimen/unread_textsize"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_txt"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/unread_homepage_margin_left"
+            android:layout_toRightOf="@+id/unread"
+            android:textColor="@color/white"
+            android:textSize="@dimen/renhe_menu_title_textsize"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/advanced_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/renhe_hall_title_bt_marginright"
+            android:background="@android:color/transparent"
+            android:text="高级搜索"
+            android:textColor="@color/white"
+            android:textSize="@dimen/renhe_menu_title_textsize"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/keyword_edt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/unread"
+            android:layout_alignBottom="@+id/backBt"
+            android:layout_marginLeft="@dimen/unread_homepage_margin_left"
+            android:layout_marginRight="@dimen/unread_homepage_margin_left"
+            android:background="@drawable/advance_search_top_edittext"
+            android:paddingLeft="15dp"
+            android:paddingBottom="1dp"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/homepage_search_magnifier"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/renhe_menu_title_textsize"
+            android:editable="false" />
+    </RelativeLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/keyword_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textColor="@color/color999"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/keyword_tv"
+            android:layout_marginTop="5dp"
+            android:background="@color/separate_line" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/relationship_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layout"
+        android:cacheColorHint="#00000000"
+        android:divider="@null" />
+
+    <RelativeLayout
+        android:id="@+id/noresult"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layout"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+             android:textColor="@color/blog_item_date_text"
+            android:text="未找到合适的人脉" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nowifi_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/noreplyiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/wifi" 
+            
+            />
+
+        <TextView
+            android:id="@+id/balnk_rl_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noreplyiv"
+            android:layout_centerInParent="true"
+             android:textColor="@color/blog_item_date_text"
+            android:text="@string/no_net_connected" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/renhe_title_height"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/top_bacg"
+    android:gravity="center_vertical" >
+
+  <!--   <LinearLayout
+        android:id="@+id/backBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_bar_back" />
+
+        <ImageView
+            android:id="@+id/menu_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_logo" />
+    </LinearLayout> -->
+    <ImageView
+        android:id="@+id/backBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:src="@drawable/logo_selector" >
+    </ImageView>
+
+    <com.itcalf.renhe.view.ClearableEditText
+        android:id="@+id/searchEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/homeBt"
+        android:layout_toRightOf="@+id/backBt"
+        android:background="@drawable/search_shape"
+        android:hint="输入关键字"
+        android:padding="5dp"
+        android:textSize="@dimen/renhe_register_bckbutton_textsize" />
+
+    <Button
+        android:id="@+id/homeBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/transparent"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/renhe_register_bckbutton_textsize" />
+
+</RelativeLayout>

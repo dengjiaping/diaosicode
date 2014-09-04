@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/renhe_title_height"
+    android:layout_alignParentTop="true"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/top_bacg" >
+
+    <!-- <LinearLayout
+        android:id="@+id/backBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_bar_back" />
+
+        <ImageView
+            android:id="@+id/menu_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_logo" />
+    </LinearLayout> -->
+    <ImageView
+        android:id="@+id/backBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:src="@drawable/logo_selector" >
+    </ImageView>
+
+    <Button
+        android:id="@+id/unread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/backBt"
+        android:background="@drawable/unread_homepage"
+        android:textColor="@color/top_bacg_red"
+        android:textSize="@dimen/unread_textsize"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_txt"
+        style="@style/titleTextSizeWithBlack"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/unread_homepage_margin_left"
+        android:layout_toRightOf="@+id/unread"
+        android:textColor="@color/white"
+        android:textSize="@dimen/renhe_menu_title_textsize" />
+
+    <ImageButton
+        android:id="@+id/searchIB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/renhe_hall_title_searchbt_marginright"
+        android:layout_toLeftOf="@+id/sendBt"
+        android:background="@android:color/transparent"
+        android:src="@drawable/search_ib_selected" />
+
+    <Button
+        android:id="@+id/sendBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/renhe_hall_title_bt_marginright"
+        android:background="@android:color/transparent"
+        android:paddingLeft="40dp"
+        android:text="发布"
+        android:textColor="@color/white"
+        android:textSize="@dimen/renhe_menu_title_textsize" />
+
+</RelativeLayout>

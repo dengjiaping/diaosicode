@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/home"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    style="@style/actionbarlogobcg"
+    android:orientation="horizontal"
+    android:paddingRight="5dp" >
+
+    <!-- 水平显示 -->
+
+    <ImageView
+        android:id="@+id/title_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_navigation_drawer" />
+
+    <RelativeLayout
+        android:id="@+id/main_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" 
+        android:layout_centerVertical="true"
+         android:layout_toRightOf="@+id/title_drawer">
+
+        <ImageView
+            android:id="@+id/title_logo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+           
+            android:src="@drawable/ic_action_logo" />
+
+        <Button
+            android:id="@+id/title_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/title_logo"
+            android:background="@drawable/unread_slidmenu"
+            android:clickable="false"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/main_rl"
+        android:layout_marginLeft="3dp"
+        android:clickable="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

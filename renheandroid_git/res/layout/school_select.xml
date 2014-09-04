@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/new_archieve_bcg"
+    tools:context=".MainActivity" >
+	<!-- <include
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/renhe_title_height"
+        android:layout_alignParentTop="true"
+        layout="@layout/archive_edit_top" /> -->
+    <com.itcalf.renhe.view.ClearableEditText 
+        android:id="@+id/schoolEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:background="@color/white"
+        android:padding="@dimen/archieve_edit_item_editview_padding"
+        android:hint="输入学校名称"/>
+    <View 
+        android:id="@+id/seleparator"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/separate_line"
+        android:layout_below="@+id/schoolEt"/>
+    <ListView 
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seleparator"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/separate_line"
+        android:dividerHeight="1dp"
+        android:smoothScrollbar="true">
+        
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    >
+	<PreferenceCategory android:title="通用设置">
+		<CheckBoxPreference android:summary="浏览列表时可使用拖动条快速拖动"
+			android:key="fastscroll" android:title="开启快速拖动" android:enabled="true" android:selectable="true"
+			android:disableDependentsState="true" android:defaultValue="true" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="提醒设置">
+		<CheckBoxPreference android:summary="在收到站内信时提醒"
+			android:key="warnmsg" android:title="消息提醒" android:enabled="true" android:selectable="true"
+			android:disableDependentsState="true" android:defaultValue="true" />
+		<CheckBoxPreference android:summary="收到提醒时震动"
+			android:key="warnshake" android:title="震动" android:enabled="true" android:selectable="true"
+			android:disableDependentsState="true" android:defaultValue="true" />
+		<CheckBoxPreference android:summary="收到提醒时点亮LED灯"
+			android:key="led" android:title="LED" android:enabled="true" android:selectable="true"
+			android:disableDependentsState="true" android:defaultValue="true" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="流量设置">
+		<CheckBoxPreference android:key="showpic"
+			android:title="客厅图片显示" android:enabled="true" android:selectable="true"
+			android:disableDependentsState="true" android:defaultValue="true" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="缓存设置">
+		<CheckBoxPreference android:key="exitcache"
+			android:title="退出时清除缓存" android:enabled="true" android:selectable="true"
+			android:disableDependentsState="true" android:defaultValue="false" />
+		<com.itcalf.renhe.view.TextPreference android:title="立即清除缓存" android:key="clearcache" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="其它设置">
+		<com.itcalf.renhe.view.TextPreference android:title="关于" android:summary="@string/versionnameshow" android:key="about"/>
+		<com.itcalf.renhe.view.TextPreference android:title="升级更新" android:key="update"/>
+	</PreferenceCategory>
+</PreferenceScreen>

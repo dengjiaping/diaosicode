@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res/com.itcalf.renhe"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+   <!--  <include
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/renhe_title_height"
+        layout="@layout/innermsg_top1" /> -->
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:background="@color/achieve_item_bacg"
+        android:orientation="vertical"
+        android:paddingBottom="9dip"
+        android:paddingTop="9dip" >
+
+        <com.itcalf.renhe.view.RoundCornerImageView
+            android:id="@+id/avatarImage"
+            android:layout_width="@dimen/renhe_room_showmsg_image_wh"
+            android:layout_height="@dimen/renhe_room_showmsg_image_wh"
+            android:layout_marginLeft="9dip"
+            android:src="@drawable/avatar"
+            attr:radiusXY="@dimen/round_image_radius" />
+
+        <TextView
+            android:id="@+id/nameTv"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_marginLeft="9dip"
+            android:layout_toRightOf="@id/avatarImage"
+            android:text=""
+            android:textSize="18sp" />
+ 		<ImageView
+            android:id="@+id/arrayRightImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9dip"
+            android:background="@drawable/msg_right" />
+        <ImageView
+            android:id="@+id/vipImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/nameTv"
+            android:layout_marginBottom="@dimen/vip_margin"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/nameTv" />
+
+        <ImageView
+            android:id="@+id/realnameImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/nameTv"
+            android:layout_marginBottom="@dimen/realname_margin"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/vipImage" />
+
+
+        <TextView
+            android:id="@+id/jobTv"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_below="@id/nameTv"
+            android:layout_alignLeft="@+id/nameTv"
+            android:layout_toRightOf="@id/avatarImage"
+            android:layout_toLeftOf="@+id/arrayRightImage"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text=""
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/industryTv"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_alignLeft="@+id/nameTv"
+            android:layout_below="@id/jobTv"
+            android:layout_toRightOf="@id/avatar_img"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:layout_toLeftOf="@+id/arrayRightImage"
+            android:layout_marginRight="10dp" />
+
+       
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/main_bottom_shape"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/delBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dip"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/innermsg__del_selector"
+            android:text="删除"
+            android:textColor="@drawable/roomsbottomtxt_selected"
+            android:textSize="@dimen/room_tab_bottom_item_text_size" />
+
+        <Button
+            android:id="@+id/replyBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dip"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/innermsg__reply_selector"
+            android:text="回复"
+            android:textColor="@drawable/roomsbottomtxt_selected"
+            android:textSize="@dimen/room_tab_bottom_item_text_size"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/writeBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="26dip"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/archieve__innermessage_selector"
+            android:text="写站内信"
+            android:textColor="@drawable/roomsbottomtxt_selected"
+            android:textSize="@dimen/room_tab_bottom_item_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout3"
+        android:layout_below="@id/layout1" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/titleInfoTv"
+                style="@style/titleTextSizeWithBlack"
+                android:paddingBottom="3dip"
+                android:paddingLeft="9dip"
+                android:paddingRight="9dip"
+                android:paddingTop="3dip"
+                android:text=""
+                android:textColor="@color/color333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/timeTv"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_below="@id/titleInfoTv"
+                android:paddingBottom="3dip"
+                android:paddingLeft="9dip"
+                android:text=""
+                android:textColor="@color/color999"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_below="@id/timeTv"
+                android:layout_marginTop="3dip"
+                android:background="@color/separate_line" />
+
+            <TextView
+                android:id="@+id/agreeTv"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_width="295dip"
+                android:layout_height="38dip"
+                android:layout_below="@id/view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dip"
+                android:background="@drawable/agree_shape"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@color/lightblackColor"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/contentTv"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_below="@id/agreeTv"
+                android:layout_margin="9dip"
+                android:lineSpacingMultiplier="1.3"
+                android:text=""
+                android:textColor="@color/color000"
+                android:textColorLink="@color/room_at_color"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/bottomlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contentTv"
+                android:layout_marginTop="12dip"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/agreeBt"
+                    style="@style/titleTextSizeWithBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/showmsg_agreebtn_selected"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="同意邀请"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/lateragreeBt"
+                    style="@style/titleTextSizeWithBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/showmsg_noagreebtn_selected"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="暂不处理"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/noagreeBt"
+                    style="@style/titleTextSizeWithBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/showmsg_noagreebtn_selected"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="不同意"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@id/bottomlayout"
+                android:layout_marginTop="8dip" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

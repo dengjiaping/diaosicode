@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_archieve_sub_item_bacg"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        style="@style/titleTextSizeWithSmallBlack"
+        android:text="网站"
+        android:textColor="@color/new_archieve_fourbt_textcolor"
+        android:textSize="@dimen/archieve_job_size" />
+
+    <LinearLayout
+        android:id="@+id/siteLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/archievee_item_between_margin"
+        android:orientation="vertical" />
+
+</LinearLayout>

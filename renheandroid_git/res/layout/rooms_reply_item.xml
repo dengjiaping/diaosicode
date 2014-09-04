@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res/com.itcalf.renhe"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="@drawable/room_item_new_bacg_selector"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/separate_line" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp" >
+
+        <com.itcalf.renhe.view.RoundCornerImageView
+            android:id="@+id/avatar_img"
+            android:layout_width="@dimen/renhe_room_showmsg_reply_image_wh"
+            android:layout_height="@dimen/renhe_room_showmsg_reply_image_wh"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/avatar"
+            attr:radiusXY="@dimen/list_item_round_image_radius" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_alignTop="@+id/avatar_img"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/avatar_img"
+            android:textColor="@color/lightblackColor"
+            android:textSize="@dimen/room_reply_name" 
+            android:maxLength="15"
+            android:ellipsize="end"
+            />
+
+        <ImageView
+            android:id="@+id/vipImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/titleTv"
+            android:layout_marginBottom="@dimen/vip_margin"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/titleTv" />
+
+        <ImageView
+            android:id="@+id/realnameImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/titleTv"
+            android:layout_marginBottom="@dimen/realname_margin"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/vipImage"
+             />
+
+        <TextView
+            android:id="@+id/infoTv"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_width="fill_parent"
+            android:layout_alignLeft="@id/titleTv"
+            android:layout_below="@id/titleTv"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/avatar_img"
+            android:textColor="@color/color333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/timeTv"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_alignBottom="@id/titleTv"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/color999"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    
+
+</LinearLayout>

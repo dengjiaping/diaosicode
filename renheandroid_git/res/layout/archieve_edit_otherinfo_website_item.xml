@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp" 
+        android:paddingBottom="10dp" 
+        android:paddingRight="@dimen/archieve_edit_item_editview_padding" 
+        >
+        <TextView 
+            android:id="@+id/selectedTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+		<Spinner 
+		    android:id="@+id/webspinner"
+		    android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+         <ImageButton
+            android:id="@+id/remove_provide_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:src="@drawable/remove_one_more" />
+        <EditText
+            android:id="@+id/canprovide_item_ET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/archieve_edit_item_text_size" 
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/remove_provide_ib"
+            android:layout_toRightOf="@+id/webspinner"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/separate_line" />
+
+</LinearLayout>

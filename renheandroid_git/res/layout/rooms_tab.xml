@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/main_bottom_shape"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+             >
+
+            <Button
+                android:id="@+id/msg_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/livingroom_selected"
+                android:text="我的客厅"
+                android:textColor="@drawable/roomsbottomtxt_selected"
+                android:textSize="@dimen/room_tab_bottom_item_text_size"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/friends_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/friend_selected"
+                android:text="朋友"
+                android:textColor="@drawable/roomsbottomtxt_selected"
+                android:textSize="@dimen/room_tab_bottom_item_text_size"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/colleagues_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/colleague_selected"
+                android:text="同行"
+                android:textColor="@drawable/roomsbottomtxt_selected"
+                android:textSize="@dimen/room_tab_bottom_item_text_size"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/city_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/city_selected"
+                android:text="同城"
+                android:textColor="@drawable/roomsbottomtxt_selected"
+                android:textSize="@dimen/room_tab_bottom_item_text_size" 
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/follow_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/follow_selected"
+                android:text="最受关注"
+                android:textColor="@drawable/roomsbottomtxt_selected"
+                android:textSize="@dimen/room_tab_bottom_item_text_size"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:visibility="gone" />
+    </LinearLayout>
+ <ImageView 
+        android:id="@+id/guide_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/guide_02"
+        android:visibility="gone"
+        android:contentDescription="first in guide,just once"
+        />
+</TabHost>

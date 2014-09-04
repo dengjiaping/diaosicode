@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_rl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorF5f5f5" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/logintopStr"
+            android:gravity="center"
+            android:src="@drawable/logintop" />
+
+        <com.itcalf.renhe.view.AutoCompleteAndClearableEdittext
+            android:id="@+id/mailEt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView1"
+            android:layout_marginLeft="@dimen/renhe_login_edittext_marginleft_right"
+            android:layout_marginRight="@dimen/renhe_login_edittext_marginleft_right"
+            android:layout_marginTop="@dimen/renhe_login_edittext_margintop"
+            android:background="@drawable/csearch_selector"
+            android:drawableLeft="@drawable/account_icon_pre"
+            android:drawablePadding="5dp"
+            android:hint="@string/loginMailTitle"
+            android:paddingBottom="@dimen/renhe_login_edittext_paddingbottom_top"
+            android:paddingLeft="@dimen/renhe_login_edittext_paddingleft"
+            android:paddingTop="@dimen/renhe_login_edittext_paddingbottom_top"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/renhe_login_edittext_textsize" />
+
+        <com.itcalf.renhe.view.ClearableEditText
+            android:id="@+id/pwdEt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mailEt"
+            android:layout_marginLeft="@dimen/renhe_login_edittext_marginleft_right"
+            android:layout_marginRight="@dimen/renhe_login_edittext_marginleft_right"
+            android:layout_marginTop="@dimen/renhe_login_edittext_margintop"
+            android:background="@drawable/csearch_selector"
+            android:drawableLeft="@drawable/pwd_icon_pre"
+            android:drawablePadding="5dp"
+            android:hint="@string/loginPassTitle"
+            android:paddingBottom="@dimen/renhe_login_edittext_paddingbottom_top"
+            android:paddingLeft="@dimen/renhe_login_edittext_paddingleft"
+            android:paddingTop="@dimen/renhe_login_edittext_paddingbottom_top"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/renhe_login_edittext_textsize" />
+
+        <Button
+            android:id="@+id/loginBt"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pwdEt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/renhe_login_edittext_marginleft_right"
+            android:layout_marginRight="@dimen/renhe_login_edittext_marginleft_right"
+            android:layout_marginTop="@dimen/renhe_login_button_margintop"
+            android:background="@drawable/login_bt_selected"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/loginBtnStr"
+            android:textColor="@color/white"
+            android:textSize="@dimen/renhe_login_button_textsize" />
+
+        <RelativeLayout
+            android:id="@+id/forgetpwd_RL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginBt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/renhe_login_edittext_marginleft_right"
+            android:layout_marginRight="@dimen/renhe_login_edittext_marginleft_right"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="找回密码"
+                android:textColor="#1396cc"
+                android:textSize="13sp" 
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/text1"
+                android:text="登录遇到问题？ "
+                android:textColor="@color/lightblackColor"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <!--
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/renhe_login_noaccount_height"
+            android:layout_below="@id/loginBt"
+            android:layout_marginLeft="@dimen/renhe_login_noaccount_marginleft_right"
+            android:layout_marginRight="@dimen/renhe_login_noaccount_marginleft_right"
+            android:layout_marginTop="@dimen/renhe_login_noaccount_margintop"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/text1"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_centerVertical="true"
+                android:text="@string/hasNoAccount"
+                android:textSize="@dimen/renhe_login_noaccount_textsize" />
+
+            <TextView
+                android:id="@+id/registerTv"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/text1"
+                android:text="@string/gotoRegister"
+                android:textColor="@color/hrefColor"
+                android:textSize="@dimen/renhe_login_noaccount_textsize" />
+        </RelativeLayout>
+        -->
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/registerbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/login_register_bt_selected"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="注册"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
